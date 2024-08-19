@@ -18,17 +18,28 @@ fun construirAcuario() {
     acuario7.imprimirTamano()
     acuario7.volumen = 70
     acuario7.imprimirTamano()
-    */
+
 
     val miAcuario = Acuario(ancho = 25, largo = 25, alto = 40)
     miAcuario.imprimirTamano()
     println()
 
     val miTorre = TanqueTorre(diametro = 25, alto = 40)
-    miTorre.imprimirTamano()
+    miTorre.imprimirTamano() */
+}
+
+fun crearPeces() {
+    val tiburon = Tiburón()
+    val pezPayaso = PezPayaso()
+
+    println("El color del Tiburón es: ${tiburon.color}")
+    tiburon.comer()
+
+    println("El color del Pez Payaso es: ${pezPayaso.color}")
+    pezPayaso.comer()
 }
 
 fun main() {
-    construirAcuario()
+    crearPeces()
 }
 
